@@ -4,63 +4,143 @@
   <meta charset="UTF-8">
   <title>Royal Paws Kennel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body{
       margin:0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background:#0b1220;
       color:#ffffff;
-      text-align:center;
     }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 20px;
+      background:#020617;
+      position:sticky;
+      top:0;
+    }
+
+    nav h2{
+      margin:0;
+      font-size:22px;
+      color:#22d3ee;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:15px;
+      font-size:14px;
+    }
+
     header{
-      padding:50px 20px;
+      padding:60px 20px;
+      text-align:center;
       background:linear-gradient(135deg,#16a34a,#22d3ee);
     }
+
     header h1{
-      margin:0;
-      font-size:34px;
+      font-size:36px;
+      margin-bottom:10px;
     }
+
+    header p{
+      font-size:16px;
+      opacity:0.95;
+    }
+
     section{
-      padding:40px 20px;
+      padding:45px 20px;
+      text-align:center;
     }
+
+    .cards{
+      display:grid;
+      gap:20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
     .card{
       background:#020617;
-      margin:20px auto;
       padding:25px;
-      max-width:420px;
-      border-radius:14px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
     }
+
+    .card h3{
+      color:#22d3ee;
+    }
+
     footer{
       background:#020617;
-      padding:15px;
+      padding:20px;
+      text-align:center;
       font-size:14px;
       opacity:0.7;
+    }
+
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:14px 18px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
 
+<nav>
+  <h2>🐾 Royal Paws</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Breeds</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
 <header>
-  <h1>🐾 Royal Paws Kennel</h1>
-  <p>Premium Dogs • Training • Pet Products</p>
+  <h1>Royal Paws Kennel</h1>
+  <p>Premium Dogs • Ethical Breeding • Pet Products</p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>🐶 Our Services</h2>
-    <p>Dog Kennel, Training, Grooming & Pet Accessories</p>
-  </div>
+  <h2>Why Choose Us?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🐶 Premium Breeds</h3>
+      <p>Healthy, well-trained and ethically raised dogs.</p>
+    </div>
 
-  <div class="card">
-    <h2>📍 Contact Us</h2>
-    <p>WhatsApp: 9XXXXXXXXX</p>
-    <p>India</p>
+    <div class="card">
+      <h3>🛍️ Pet Products</h3>
+      <p>Food, accessories & grooming essentials.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Trusted Support</h3>
+      <p>Lifetime guidance and after-sale support.</p>
+    </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Royal Paws Kennel | Powered by Netlify
+  © 2026 Royal Paws Kennel | India
 </footer>
+
+<a class="whatsapp" href="https://wa.me/918102616561" target="_blank">
+  💬 WhatsApp
+</a>
 
 </body>
 </html>
