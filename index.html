@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Royal Paws Kennel | Premium Dog Breeds & Pet Products</title>
+<meta name="description" content="Royal Paws Kennel offers premium dog breeds, ethical breeding, pet products and lifetime support.">
+<meta name="keywords" content="dog kennel, husky kennel, german shepherd, pet products, dog breeder">
+<meta name="author" content="Royal Paws Kennel">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 25px;background:rgba(0,0,0,.6);
+  position:sticky;top:0;z-index:100;
+}
+nav h2{font-weight:700}
+nav a{
+  color:#fff;text-decoration:none;margin-left:15px;
+  font-size:14px;opacity:.85
+}
+nav a:hover{opacity:1}
+
+/* HERO */
+header{
+  text-align:center;padding:100px 20px;
+  background:radial-gradient(circle at top,rgba(255,255,255,.2),rgba(0,0,0,.9));
+}
+header h1{
+  font-size:3rem;text-shadow:0 0 25px rgba(255,255,255,.4)
+}
+header p{margin-top:10px;opacity:.85}
+
+/* SECTION */
+section{padding:70px 20px;max-width:1100px;margin:auto}
+section h2{text-align:center;margin-bottom:40px;font-size:2.2rem}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px
+}
+.card{
+  background:rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:30px;text-align:center;
+  backdrop-filter:blur(8px);
+  transition:.3s
+}
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.45)
+}
+.card img{
+  width:100%;height:180px;
+  object-fit:cover;border-radius:14px;
+  margin-bottom:15px
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px
+}
+.gallery img{
+  width:100%;height:200px;
+  object-fit:cover;border-radius:16px
+}
+
+/* CONTACT */
+form{
+  max-width:500px;margin:auto;
+  display:flex;flex-direction:column;gap:15px
+}
+input,textarea{
+  padding:12px;border:none;border-radius:12px;outline:none
+}
+button{
+  padding:14px;border:none;border-radius:30px;
+  background:#25D366;color:#fff;
+  font-weight:600;cursor:pointer
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:#fff;
+  padding:14px 18px;border-radius:50px;
+  text-decoration:none;font-weight:600;
+  box-shadow:0 8px 20px rgba(0,0,0,.4)
+}
+
+/* FOOTER */
+footer{
+  text-align:center;padding:25px;
+  background:rgba(0,0,0,.65);
+  font-size:13px;opacity:.85
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Royal Paws</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#breeds">Breeds</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <h1>Royal Paws Kennel</h1>
+  <p>Premium Dogs • Ethical Breeding • Trusted Pet Products</p>
+</header>
+
+<!-- BREEDS -->
+<section id="breeds">
+<h2>Our Dog Breeds</h2>
+<div class="cards">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+    <h3>Siberian Husky</h3>
+    <p>Strong, intelligent and family-friendly working dogs.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
+    <h3>German Shepherd</h3>
+    <p>Loyal, protective and highly trainable companions.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1619983081593-e2ba5b543168">
+    <h3>Alaskan Malamute</h3>
+    <p>Powerful, affectionate and majestic arctic breed.</p>
+  </div>
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+<h2>Pet Products</h2>
+<div class="cards">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1583512603874-2328c7d8f7a8">
+    <h3>Premium Dog Food</h3>
+    <p>Nutrition-rich food for healthy growth.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1601758003122-78d9a1a1c9b1">
+    <h3>Leashes & Collars</h3>
+    <p>Strong, stylish and comfortable accessories.</p>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598133894008-61f7f1b2f9c7">
+    <h3>Grooming Essentials</h3>
+    <p>Professional grooming tools for pets.</p>
+  </div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+  <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993">
+  <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a">
+  <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
+</div>
+</section>
+
+<!-- CONTACT (NETLIFY FORM READY) -->
+<section id="contact">
+<h2>Contact Us</h2>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+</section>
+
+<a class="whatsapp" href="https://wa.me/918102616561" target="_blank">
+WhatsApp
+</a>
+
+<footer>
+© 2026 Royal Paws Kennel • All Rights Reserved
+</footer>
+
+</body>
+</html>
