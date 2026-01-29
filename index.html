@@ -1,179 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Royal Paws Kennel</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-  margin:0;
-  font-family:'Segoe UI',Arial,sans-serif;
-  background:#0b1220;
-  color:white;
-}
-nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 20px;
-  background:#020617;
-  position:sticky;
-  top:0;
-}
-nav h2{
-  margin:0;
-  font-size:22px;
-  color:#22d3ee;
-}
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:15px;
-  font-size:14px;
-  transition:0.3s;
-}
-nav a:hover{
-  color:#16a34a;
-}
-header{
-  padding:60px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#16a34a,#22d3ee);
-}
-header h1{
-  font-size:36px;
-  margin-bottom:10px;
-}
-header p{
-  font-size:16px;
-  opacity:0.95;
-}
-/* Husky Image */
-header img{
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  margin-top:15px;
-  object-fit:cover;
-  box-shadow:0 8px 20px rgba(0,0,0,0.5);
-  transition:0.3s;
-}
-header img:hover{
-  transform:scale(1.05);
-}
-/* Cards Section */
-section.cards-section{
-  padding:45px 20px;
-  text-align:center;
-}
-.cards{
-  display:grid;
-  gap:20px;
-  max-width:1000px;
-  margin:auto;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-}
-.card{
-  background:#020617;
-  padding:25px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-  transition:0.3s;
-}
-.card:hover{
-  transform:scale(1.03);
-}
-/* Gallery */
-section.gallery{
-  padding:45px 10px;
-  overflow-x:auto;
-  display:flex;
-  gap:15px;
-}
-section.gallery img{
-  height:150px;
-  border-radius:12px;
-  flex-shrink:0;
-  transition:0.3s;
-}
-section.gallery img:hover{
-  transform:scale(1.05);
-}
-/* Footer */
-footer{
-  background:#020617;
-  padding:20px;
-  text-align:center;
-  font-size:14px;
-  opacity:0.8;
-}
-/* WhatsApp floating button */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:14px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  box-shadow:0 8px 20px rgba(0,0,0,0.4);
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Paws Kennel</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle at top, rgba(255,255,255,0.18), rgba(0,0,0,0.85));
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 25px rgba(255,255,255,0.35);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    /* SECTION */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    /* WHATSAPP BUTTON */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(0,0,0,0.5);
+      font-size: 13px;
+      opacity: 0.8;
+    }
+  </style>
 </head>
+
 <body>
 
-<nav>
-  <h2>🐾 Royal Paws</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="breeds.html">Breeds</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-
-<header>
-  <h1>Royal Paws Kennel</h1>
-  <p>Premium Dogs • Ethical Breeding • Pet Products</p>
-
-  <!-- Husky Image -->
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDABALDAwMDAwMEAwMEBQYFBQUFBgcGBwoHBgYICAsICQkKCgkMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAALCAABAAEBAREA/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAAAf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAf/EABQQAQAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAQUCj//EABQRAQAAAAAAAAAAAAAAAAAAAD/2gAI
-AQMBAT8B/9k=" alt="Beautiful Siberian Husky">
-</header>
-
-<section class="cards-section">
-  <h2>Why Choose Us?</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>🐶 Premium Breeds</h3>
-      <p>Healthy, well-trained and ethically raised dogs.</p>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Royal Paws</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Breeds</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
     </div>
-    <div class="card">
-      <h3>🛍️ Pet Products</h3>
-      <p>Food, accessories & grooming essentials.</p>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Royal Paws Kennel</h1>
+    <p>Premium Dogs • Ethical Breeding • Trusted Pet Products</p>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <div class="cards">
+      <div class="card">
+        <h3>Premium Dog Breeds</h3>
+        <p>Healthy, well-trained and ethically bred dogs with proper documentation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pet Products</h3>
+        <p>High quality food, accessories and grooming products for your pets.</p>
+      </div>
+
+      <div class="card">
+        <h3>Trusted Support</h3>
+        <p>Lifetime guidance and after-sale support for every pet parent.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>🤝 Trusted Support</h3>
-      <p>Lifetime guidance and after-sale support.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="gallery">
-  <img src="https://images.unsplash.com/photo-1601758123927-04b45f4f7cf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=150" alt="Dog1">
-  <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=150" alt="Dog2">
-  <img src="https://images.unsplash.com/photo-1592194996308-5ec1dcf7a84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=150" alt="Dog3">
-  <img src="https://images.unsplash.com/photo-1592194996308-1f84c57e84b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&h=150" alt="Dog4">
-</section>
+  <!-- WHATSAPP -->
+  <a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+    WhatsApp
+  </a>
 
-<footer>
-  © 2026 Royal Paws Kennel | India | <a href="https://wa.me/91XXXXXXXXXX" style="color:#25D366;">WhatsApp</a>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">💬 WhatsApp</a>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Royal Paws Kennel • All Rights Reserved
+  </footer>
 
 </body>
 </html>
